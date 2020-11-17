@@ -2,13 +2,16 @@ import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import logo from "../Images/logo.jpg";
 
 const NavBar = () => {
   const location = useLocation();
 
   return (
     <Navbar collapseOnSelect expand="lg">
-      <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+      <Navbar.Brand href="#home">
+        <img alt="headerImage" src={logo} id="navbar-icon" />
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Nav id="nav-item-divider-div">
         <div id="nav-item-divider"></div>
