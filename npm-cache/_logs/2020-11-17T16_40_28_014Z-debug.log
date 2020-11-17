@@ -1,0 +1,39 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/Users/demarcus/.nvm/versions/node/v12.14.0/bin/node',
+1 verbose cli   '/Users/demarcus/.nvm/versions/node/v12.14.0/bin/npm',
+1 verbose cli   'i'
+1 verbose cli ]
+2 info using npm@6.14.6
+3 info using node@v12.14.0
+4 verbose npm-session 1f28f0dd069fbfb2
+5 silly install runPreinstallTopLevelLifecycles
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 timing stage:rollbackFailedOptional Completed in 1ms
+9 timing stage:runTopLevelLifecycles Completed in 1623ms
+10 verbose stack Error: Failed to parse json
+10 verbose stack Unexpected token } in JSON at position 534 while parsing near '...nners": "^0.9.0",
+10 verbose stack   },
+10 verbose stack   "scripts": {
+10 verbose stack   ...'
+10 verbose stack     at parseError (/Users/demarcus/.nvm/versions/node/v12.14.0/lib/node_modules/npm/node_modules/read-package-json/read-json.js:470:11)
+10 verbose stack     at parseJson (/Users/demarcus/.nvm/versions/node/v12.14.0/lib/node_modules/npm/node_modules/read-package-json/read-json.js:105:26)
+10 verbose stack     at /Users/demarcus/.nvm/versions/node/v12.14.0/lib/node_modules/npm/node_modules/read-package-json/read-json.js:52:5
+10 verbose stack     at /Users/demarcus/.nvm/versions/node/v12.14.0/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:123:16
+10 verbose stack     at FSReqCallback.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:61:3)
+11 verbose cwd /Users/demarcus/projects/playground/durant-exterior
+12 verbose Darwin 19.6.0
+13 verbose argv "/Users/demarcus/.nvm/versions/node/v12.14.0/bin/node" "/Users/demarcus/.nvm/versions/node/v12.14.0/bin/npm" "i"
+14 verbose node v12.14.0
+15 verbose npm  v6.14.6
+16 error code EJSONPARSE
+17 error file /Users/demarcus/projects/playground/durant-exterior/package.json
+18 error JSON.parse Failed to parse json
+18 error JSON.parse Unexpected token } in JSON at position 534 while parsing near '...nners": "^0.9.0",
+18 error JSON.parse   },
+18 error JSON.parse   "scripts": {
+18 error JSON.parse   ...'
+19 error JSON.parse Failed to parse package.json data.
+19 error JSON.parse package.json must be actual JSON, not just JavaScript.
+20 verbose exit [ 1, true ]

@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+.nav-item {
+  color: black;
+  font-weight: 800;
+}
+.nav-item.active {
+  color: black;
+  font-weight: 800;
+  border-bottom: orange;
+  border-bottom-style: solid;
+}
+.navbar {
+  background-color: white !important;
+  /* -webkit-box-shadow: 0px 1px 5px 0px rgba(102, 102, 102, 1);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(102, 102, 102, 1);
+  box-shadow: 0px 1px 5px 0px rgba(102, 102, 102, 1); */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (min-width: 1025px) {
+  /* desktop */
+  .nav-collapse-div {
+    margin-right: auto !important;
+  }
+  .nav-item {
+    margin-left: 20px;
+  }
+  #nav-item-divider {
+    border-right: solid 1px black;
+    width: 2px;
+    height: 70px;
+    background-color: red;
+    margin-left: 20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 760px) and (max-width: 1000px) {
+  /* ipad */
+  #nav-item-divider-div {
+    display: none !important;
   }
-  to {
-    transform: rotate(360deg);
+  .nav-item {
+    text-align: center;
+    text-align: center;
+    padding: 10px 0px;
+    margin: 0px 250px;
+  }
+}
+@media (min-width: 770px) and (max-width: 1025px) {
+  /* ipad pro */
+  .nav-collapse-div {
+    margin-right: auto !important;
+  }
+  #nav-item-divider {
+    border-right: solid 1px black;
+    width: 2px;
+    height: 70px;
+    background-color: red;
+    margin-left: 20px;
+  }
+  .nav-item {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 759px) {
+  /* iphone */
+  #nav-item-divider-div {
+    display: none !important;
+  }
+  .nav-item {
+    text-align: center;
+    padding: 10px 0px;
+    margin: 0px 100px;
   }
 }

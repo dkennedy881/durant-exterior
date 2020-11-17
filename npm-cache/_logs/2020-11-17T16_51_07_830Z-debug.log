@@ -1,0 +1,35 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/Users/demarcus/.nvm/versions/node/v12.14.0/bin/node',
+1 verbose cli   '/Users/demarcus/.nvm/versions/node/v12.14.0/lib/node_modules/npm/bin/npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'i@latest',
+1 verbose cli   '--global',
+1 verbose cli   '--prefix',
+1 verbose cli   '/Users/demarcus/projects/playground/durant-exterior/npm-cache/_npx/10960',
+1 verbose cli   '--loglevel',
+1 verbose cli   'error',
+1 verbose cli   '--json'
+1 verbose cli ]
+2 info using npm@6.14.6
+3 info using node@v12.14.0
+4 verbose npm-session 1a55ee544669f272
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 http fetch GET 401 https://na.artifactory.swg-devops.com/artifactory/api/npm/fxo-cio-ies-npm-virtual/i 1197ms
+8 silly fetchPackageMetaData error for i@latest Unable to authenticate, need: Basic realm="Artifactory Realm"
+9 timing stage:rollbackFailedOptional Completed in 0ms
+10 timing stage:runTopLevelLifecycles Completed in 1210ms
+11 verbose stack Error: Unable to authenticate, need: Basic realm="Artifactory Realm"
+11 verbose stack     at /Users/demarcus/.nvm/versions/node/v12.14.0/lib/node_modules/npm/node_modules/npm-registry-fetch/check-response.js:104:17
+11 verbose stack     at processTicksAndRejections (internal/process/task_queues.js:93:5)
+12 verbose statusCode 401
+13 verbose pkgid i@latest
+14 verbose cwd /Users/demarcus/projects/playground/durant-exterior
+15 verbose Darwin 19.6.0
+16 verbose argv "/Users/demarcus/.nvm/versions/node/v12.14.0/bin/node" "/Users/demarcus/.nvm/versions/node/v12.14.0/lib/node_modules/npm/bin/npm-cli.js" "install" "i@latest" "--global" "--prefix" "/Users/demarcus/projects/playground/durant-exterior/npm-cache/_npx/10960" "--loglevel" "error" "--json"
+17 verbose node v12.14.0
+18 verbose npm  v6.14.6
+19 error code E401
+20 error Unable to authenticate, need: Basic realm="Artifactory Realm"
+21 verbose exit [ 1, true ]
