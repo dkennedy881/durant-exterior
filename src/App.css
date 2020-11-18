@@ -18,6 +18,11 @@
   width: 200px;
   height: 90px;
 }
+.home-link-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 @media screen and (min-width: 1025px) {
   /* desktop */
   .nav-collapse-div {
@@ -32,6 +37,30 @@
     height: 70px;
     margin-left: 20px;
   }
+  #home-container {
+    height: calc(100vh - 116px);
+  }
+  #home-row-1 {
+    height: 100%;
+  }
+  .c-item {
+    height: calc(100vh - 116px);
+  }
+  #home-img-col {
+    padding: 0px !important;
+  }
+  #home-content-flex-row {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+  #home-content-flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: -50px;
+  }
 }
 
 @media (min-width: 760px) and (max-width: 1000px) {
@@ -44,6 +73,27 @@
     text-align: center;
     padding: 10px 0px;
     margin: 0px 250px;
+  }
+  #home-row-1 {
+    height: 450px;
+  }
+  .c-item {
+    height: 450px;
+  }
+  #home-img-col {
+    padding: 0px !important;
+  }
+  #home-content-flex-row {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+  #home-content-flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 50px;
   }
 }
 @media (min-width: 770px) and (max-width: 1025px) {
@@ -60,6 +110,32 @@
   .nav-item {
     margin: 0px 50px;
   }
+  #home-row-1 {
+    /* height: 500px; */
+    height: 100%;
+  }
+  .c-item {
+    /* height: 500px; */
+    height: calc(100vh - 116px);
+  }
+  #home-img-col {
+    padding: 0px !important;
+  }
+  #home-container {
+    height: calc(100vh - 116px);
+  }
+  #home-content-flex-row {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+  #home-content-flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: -150px;
+  }
 }
 
 @media (max-width: 759px) {
@@ -75,5 +151,26 @@
   #navbar-icon {
     width: 150px;
     height: 65px;
+  }
+  #home-row-1 {
+    height: 500px;
+  }
+  .c-item {
+    height: 500px;
+  }
+  #home-img-col {
+    padding: 0px !important;
+  }
+  #home-content-flex-row {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+  #home-content-flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 50px;
   }
 }
